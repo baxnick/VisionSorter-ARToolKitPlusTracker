@@ -3,8 +3,6 @@
 # QMake definitions for simple example
 #
 
-include ($$(ARTKP)/build/linux/options.pro)
-
 TEMPLATE = lib
 
 TARGET   = osgart_artoolkitplus_tracker_b
@@ -12,9 +10,6 @@ TARGET   = osgart_artoolkitplus_tracker_b
 QMAKE_CLEAN = $$(ARTKP)/bin/osgart_artoolkitplus_tracker_b*
 
 LIBS += -L$$(ARTKP)/lib -lARToolKitPlus
-
-#LIBS += -L$$(MIXLIB) -losg -losgART -losgProducer -losgText -losgGA -losgUtil -losgDB
-#LIBS += -L$$(MIXLIB) -lOpenThreads -lProducer
 
 INCLUDEPATH += $$(MIXINC)
 INCLUDEPATH += $$(ARTKP)/include
